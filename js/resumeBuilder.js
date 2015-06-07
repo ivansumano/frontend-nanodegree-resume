@@ -9,7 +9,7 @@ var bio = {
 	},
 	"welcomeMessage": "Welcome to my online resume",
 	"skills": [
-		"awesomeness", "delivering things", "cryogenic sleep", "saving the universe"
+		"team player", "good customer relations", "efficient"
 	],
 	"bioPic": "images/bioPic.jpg"
 }
@@ -91,9 +91,9 @@ work.display = function() {
 var projects = {
 	"projects": [
 		{
-			"title": "Sample Project 1",
+			"title": "P1: Build a Portfolio Site",
 			"dates": "2014",
-			"description": "Something about this project.",
+			"description": "Sample portfolio site",
 			"images": ["images/197x148.gif"]
 		}
 	]
@@ -122,9 +122,9 @@ var education = {
 	"schools": [
 	 	{
 			"name": "Cabrillo College",
-			"city": "Aptos, CS",
+			"city": "Aptos, CA",
 			"degree": "Associates",
-			"majors": ["CS"],
+			"majors": [""],
 			"dates": 2013,
 			"url": "http://www.cabrillo.edu/"
 		},
@@ -164,9 +164,9 @@ education.display = function() {
 
 		for (online in education.onlineCourses) {
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[online].title);
-			$(".education-entry:last").append(formattedOnlineTitle);
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[online].school);
-			$(".education-entry:last").append(formattedOnlineSchool);
+			var onlineTotalName = formattedOnlineTitle + formattedOnlineSchool;
+			$(".education-entry:last").append(onlineTotalName);
 			var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[online].dates);
 			$(".education-entry:last").append(formattedOnlineDates);
 			var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[online].url);
