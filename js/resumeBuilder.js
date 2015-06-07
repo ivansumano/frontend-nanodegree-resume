@@ -11,7 +11,7 @@ var bio = {
 	"skills": [
 		"awesomeness", "delivering things", "cryogenic sleep", "saving the universe"
 	],
-	"bioPic": "images/fry.jpg"
+	"bioPic": "images/bioPic.jpg"
 }
 
 bio.display = function() {
@@ -61,7 +61,7 @@ var work = {
 			"title": "Library Aide/Tech Aide",
 			"location" : "Santa Cruz, CA",
 			"dates": "2010 - Present",
-			"description": "Shelving books back ino their proper place. Pulling books to be held for requests.Shelf reading. Checking in returned books. As tech Aide assiting the public with any questions they may have while using our public internet computers."
+			"description": "Shelving books back ino their proper place. Pulling books to be held for requests. Shelf reading. Checking in returned books. As tech aide assiting the public with any questions they may have while using our public internet computers."
 		}
 	]
 }
